@@ -80,7 +80,9 @@ public class UI_NewGame : MonoBehaviour {
         //witch portrait
         player.portrait = witchPortraitList[selectedWitchPortrait];
         //familiar name
+        player.familiar.name = familiarName.text;
         //familiar protrait
+        player.familiar.portait = familiarPortraitList[selectedFamiliarPortrait];
         //magic school
         player.magicSchoolImage = schoolImageList[selectedSchoolImage];
         player.magicSchool = player.magicSchoolImage.name; 

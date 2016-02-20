@@ -4,10 +4,12 @@ using System.Collections;
 public class GameLogic : MonoBehaviour {
 
     public Witch player;
+   
 
 	// Use this for initialization
 	void Start () {
         DontDestroyOnLoad(this.gameObject);
+        GenericItem.GenerateThreshold();
 	}
 	
 	// Update is called once per frame
