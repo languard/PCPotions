@@ -13,11 +13,13 @@
     <TargetFrameworkIdentifier>.NETFramework</TargetFrameworkIdentifier>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <TargetFrameworkProfile>Unity Subset v3.5</TargetFrameworkProfile>
-    <CompilerResponseFile></CompilerResponseFile>
+    <CompilerResponseFile>
+    </CompilerResponseFile>
     <UnityProjectType>Game:1</UnityProjectType>
     <UnityBuildTarget>WebGL:20</UnityBuildTarget>
     <UnityVersion>5.3.1f1</UnityVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -69,13 +71,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Code\Game\Familiar.cs" />
+    <Compile Include="Assets\Code\Game\GameDatabase.cs" />
     <Compile Include="Assets\Code\Game\GameLogic.cs" />
+    <Compile Include="Assets\Code\Game\GenericItem.cs" />
     <Compile Include="Assets\Code\Game\House.cs" />
     <Compile Include="Assets\Code\Game\Ingredient.cs" />
+    <Compile Include="Assets\Code\Game\Potion.cs" />
     <Compile Include="Assets\Code\Game\Recipie.cs" />
     <Compile Include="Assets\Code\Game\Witch.cs" />
-    <Compile Include="Assets\Code\GenericItem.cs" />
-    <Compile Include="Assets\Code\Potion.cs" />
+    <Compile Include="Assets\Code\Game\Zone.cs" />
     <Compile Include="Assets\Code\UI\UI_Credits.cs" />
     <Compile Include="Assets\Code\UI\UI_MainGame.cs" />
     <Compile Include="Assets\Code\UI\UI_MainMenu.cs" />

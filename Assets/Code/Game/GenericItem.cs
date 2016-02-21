@@ -38,6 +38,12 @@ public class GenericItem
         ,"Peerless"     //19
         ,"Of the Gods"  //20
     };
+    private static int _currentID = 0;  //zero will be skipped.
+    public static int GetNextID()
+    {
+        _currentID += 1;
+        return _currentID;
+    }
 
     public static int GetThresholdValue(int level)
     {
@@ -77,6 +83,8 @@ public class GenericItem
         }
     }
     #endregion
+
+    
 
     public string name;
     public Sprite sprite;

@@ -13,6 +13,7 @@ public class Witch
     public Sprite magicSchoolImage;
 
     public Familiar familiar;
+    public House house;
 
     public int dreams;      //stored Rea
     public int vision;      //Rea focus
@@ -24,5 +25,6 @@ public class Witch
     public Witch()
     {
         familiar = new Familiar();
+        house = new House();
     }
 }
