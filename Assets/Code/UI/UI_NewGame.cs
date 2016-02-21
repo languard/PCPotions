@@ -80,11 +80,21 @@ public class UI_NewGame : MonoBehaviour {
         //witch portrait
         player.portrait = witchPortraitList[selectedWitchPortrait];
         //familiar name
-        player.familiar.name = familiarName.text;
+        player.familiar.name = familiarName.text.Trim();
+        if (player.familiar.name.Length == 0) player.familiar.name = "Unkown";
         //familiar protrait
         player.familiar.portait = familiarPortraitList[selectedFamiliarPortrait];
         //magic school
         player.magicSchoolImage = schoolImageList[selectedSchoolImage];
-        player.magicSchool = player.magicSchoolImage.name; 
+        player.magicSchool = player.magicSchoolImage.name;
+
+        //set starting stats
+        player.dreams = 17;
+        player.vision = 1;
+        player.potential = 1;
+        player.ko = 50;
+
+        //load into game scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene("MainGame");
     }
 }

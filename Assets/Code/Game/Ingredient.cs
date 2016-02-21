@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Ingredient
+public class Ingredient : GenericItem
 {
-
+    public int quality;
 }
 

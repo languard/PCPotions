@@ -20,4 +20,9 @@ public class Witch
 
     public int ko;          //money
 
+
+    public Witch()
+    {
+        familiar = new Familiar();
+    }
 }
