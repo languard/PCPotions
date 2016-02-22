@@ -17,26 +17,26 @@ public class GenericItem
     public static int[] threshold = new int[20];
     public static string[] thresholdLabels = new string[]
     {
-        "Bad"           //1
-        ,"Low"          //2
-        ,"Low"          //3
-        ,"Low"          //4
-        ,"OK"           //5
-        ,"OK"           //6
-        ,"OK"           //7
-        ,"Good"         //8
-        ,"Good"         //9
-        ,"Good"         //10
-        ,"Excellent"    //11
-        ,"Excellent"    //12
-        ,"Ecellent"     //13    
-        ,"Wonderous"    //14
-        ,"Wonderous"    //15
-        ,"Wonderous"    //16
-        ,"Wonderous"    //17
-        ,"Peerless"     //18
-        ,"Peerless"     //19
-        ,"Of the Gods"  //20
+        "Pathetic (1)"           //1
+        ,"Super Cheap (2)"          //2
+        ,"Very Cheap (3)"          //3
+        ,"Cheap (4)"          //4
+        ,"Somewhat OK (5)"           //5
+        ,"Mostly OK (6)"           //6
+        ,"OK (7)"           //7
+        ,"A Little Good (8)"         //8
+        ,"Sorta Good (9)"         //9
+        ,"Good (10)"         //10
+        ,"Kinda Excellent (11)"    //11
+        ,"Excellent (12)"    //12
+        ,"Really Excellent (13)"     //13    
+        ,"A Bit Wonderous (14)"    //14
+        ,"Wonderous (15)"    //15
+        ,"Very Wonderous (16)"    //16
+        ,"Wonderfuly Wonderous (17)"    //17
+        ,"Peerless (18)"     //18
+        ,"Mythical (19)"     //19
+        ,"Of the Gods (20)"  //20
     };
     private static int _currentID = 0;  //zero will be skipped.
     public static int GetNextID()
@@ -45,14 +45,23 @@ public class GenericItem
         return _currentID;
     }
 
+    /// <summary>
+    /// Assumes Level is 1-20.
+    /// </summary>
+    /// <param name="level"></param>
+    /// <returns></returns>
     public static int GetThresholdValue(int level)
     {
-        return threshold[level];
+        int target = level - 1;
+        if (target >= 20) return threshold[19];
+        else return threshold[target];
     }
 
     public static string GetThresholdName(int level)
     {
-        return thresholdLabels[level];
+        int target = level - 1;
+        if (target > 19) return thresholdLabels[19];
+        else return thresholdLabels[target];
     }
 
     public static int GetThresholdLevel(int value)
@@ -65,6 +74,20 @@ public class GenericItem
         }
 
         return lastLevel;
+    }
+
+    public static int GetQualityByName(string target)
+    {
+        int result = -1;
+        for(int i=0; i<thresholdLabels.Length; i++)
+        {
+            if(thresholdLabels[i] == target)
+            {
+                result = i;
+                break;
+            }
+        }
+        return result;
     }
 
     //simple precalculated lookup table for the Fibonacci sequence to 20, starting with 2

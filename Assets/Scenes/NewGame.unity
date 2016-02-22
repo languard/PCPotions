@@ -1153,6 +1153,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: ef585b4cd8916c549b1972a55873ded4, type: 3}
   - {fileID: 21300000, guid: ae9dddf7a125cc24d902923beaec5e7d, type: 3}
   - {fileID: 21300000, guid: c1417404ac61c5748abe3d3757239320, type: 3}
+  - {fileID: 21300000, guid: b3a4c72fcdf0e4c4196959f0b1ba5cbf, type: 3}
+  - {fileID: 21300000, guid: 99bbd9613469bd84a9d25c2fc41b7a0f, type: 3}
+  - {fileID: 21300000, guid: 58bc84df14d25024c8b60c12ca02562f, type: 3}
   selectedWitchPortrait: 0
   familiarImage: {fileID: 1224555074}
   familiarName: {fileID: 436959496}
@@ -1160,6 +1163,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9e0fea6dd91d43f4cacab16cb2d01516, type: 3}
   - {fileID: 21300000, guid: de1442c115bda454fa4ef01ce85dc630, type: 3}
   - {fileID: 21300000, guid: 4c94a201505be8449bbd324055b323d5, type: 3}
+  - {fileID: 21300000, guid: b4dfe28a0ff622a46aa4def3499e2fb4, type: 3}
   selectedFamiliarPortrait: 0
   schoolImage: {fileID: 670193457}
   schoolImageList:

@@ -21,10 +21,21 @@ public class Witch
 
     public int ko;          //money
 
+    public TimeSpan elapsedTime;
 
     public Witch()
     {
         familiar = new Familiar();
         house = new House();
+    }
+
+    public string GetTime()
+    {
+        return elapsedTime.ToString();
+    }
+
+    public void ElapseTime(int minutes)
+    {
+        elapsedTime = elapsedTime.Add(new TimeSpan(0, minutes, 0));
     }
 }

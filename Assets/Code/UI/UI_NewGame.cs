@@ -90,8 +90,8 @@ public class UI_NewGame : MonoBehaviour {
 
         //set starting stats
         player.dreams = 17;
-        player.vision = 1;
-        player.potential = 1;
+        player.vision = 1 + Random.Range(1,4);
+        player.potential = 1 + Random.Range(1,4);
         player.ko = 50;
 
         //load into game scene

@@ -12,10 +12,6 @@ public struct RecipieItem
 
 public class Recipie
 {
-    List<RecipieItem> itemsRequired;
-    int baseTime;
-    int baseRea;
-
 
 }
 
